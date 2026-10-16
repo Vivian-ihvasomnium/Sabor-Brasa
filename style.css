@@ -13,14 +13,39 @@ header, .home, .menu,.restaurantes, footer{
     padding: 30px 30px;
 }
 
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+{
+    display: flex;
+    gap: 40px;
+}
+
+.social-medias{
+    font-size: 24px;
+    display: flex;
+    gap: 40px;
+}
+
+.p-footer-inferior{
+    margin-top: 30px;
+    place-self: center;
+    text-align: center; 
+}
+
 h1 {
     font-size: 50px;
     color: white;
-}
-
-
-.logo {
-    background-color: black;
 }
 
 .h2-home-center span {
@@ -37,13 +62,11 @@ nav a {
 }
 
 header {
-    width: 100%;
     height: 70px;
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
 }
 
 header.logo img {
@@ -52,24 +75,21 @@ header.logo img {
     display: block;
 }
 
-header nav {
+header nav, .footer-info nav {
     display: flex;
     align-items: center;
     gap: 40px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
 }
-header nav a{
+header nav a, .footer-info nav a{
     border-bottom: 5px solid transparent;
 }
 
-header nav a:hover{
+header nav a:hover, .footer-info nav a:hover{
     color: #D52222;
     border-bottom: 5px solid #D52222;
 }
 
-header nav a:first-child{
+header nav a:first-child, .footer-info nav a:first-child{
     font-weight: bold;
 }
 
@@ -101,21 +121,15 @@ header nav a:first-child{
 }
 
 .home{
-    width: 100%;
-    min-height: 650px;
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.55),
-            rgba(0, 0, 0, 0.65)
-    ),
-    url(./img/img-fundo.jpg);
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.65)),url(./img/img-fundo.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: white;
-    gap: 25px;
+    gap: 25px;      
 }
 
 .menu {
@@ -165,8 +179,8 @@ font-weight: bolder;
 }
 
 .cards {
-display: flex;
-gap: 200px;
+    display: flex;
+    align-items: center;
 }
 
 .info-card{
@@ -177,7 +191,11 @@ gap: 200px;
 
 .card{
     border-right: 1px solid black;
-    padding-right: 50px;
+    padding-right: 5px;
+}
+
+.card:last-child{
+    border: none;
 }
 
 .card img {
@@ -196,26 +214,64 @@ gap: 200px;
 
 .btn-mais-pratos {
     display: flex;
-
 }
 .sobre {
-background-color: black;
-display: flex;
-align-items: center;
-gap: 40px;
-margin: 40px 30px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 100vh;
 }
 
 .sobre h2 {
-color: white;
+    color: white;
 }
 
-.direita-sobre {
-align-items: center;
+.sobre {
+    display: flex;
+    align-items: center;
+}
 
+.direita-sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px 30px;
+}
+
+.direita-sobre h2{
+    text-align: center;
+    text-align: center;
+    font-size: 40px;
+}
+
+.direita-sobre p{
+    text-align: justify;
+    font-size: 24px;
 }
 
 .sobre p {
     color: white;
-justify-content: center;
+    justify-content: center;
+}
+
+.esquerda-sobre img{
+    width: 638px;
+    height: 423px;
+    border-radius: 10px;
+}
+
+.superior-restaurantes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inferior-restaurantes img{
+    width: 100%;
+}
+
+.inferior-menu{
+    margin-top: 63px;
 }
