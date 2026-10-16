@@ -1,0 +1,221 @@
+*{  
+    font-family: 'Inter';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F0F2F1;
+}
+
+header, .home, .menu,.restaurantes, footer{
+    padding: 30px 30px;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+}
+
+
+.logo {
+    background-color: black;
+}
+
+.h2-home-center span {
+    color: #FF7700;
+    background: linear-gradient(to right, #FF7700,#D52222);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+header.logo img {
+    width: 160px;
+    height: auto;
+    display: block;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+header nav a{
+    border-bottom: 5px solid transparent;
+}
+
+header nav a:hover{
+    color: #D52222;
+    border-bottom: 5px solid #D52222;
+}
+
+header nav a:first-child{
+    font-weight: bold;
+}
+
+.btn-reservar-primario {
+    background-color: #D52222;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    padding: 9px 30px;
+    
+}
+.btn-reservar-secundario {
+    background-color: transparent;
+    color: white;
+    border: 3px solid #D52222;
+    border-radius: 10px;
+    align-items: center;
+    padding: 9px 30px;
+}
+
+.btn-ver-menu {
+    background-color: #D52222;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    padding: 12px 30px;
+}
+
+.home{
+    width: 100%;
+    min-height: 650px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.65)
+    ),
+    url(./img/img-fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    gap: 25px;
+}
+
+.menu {
+    margin-top: 40px;
+}
+.superior-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.superior-menu h2 {
+font-weight: bolder;
+}
+
+.p-superior-menu {
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.p-home-start {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #fff,#999);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.h2-home-center{
+    font-size: 64px;
+}
+
+.p-home-end {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+.ver-cardapio p {
+    text-decoration: none;
+    color: black;
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 12px 20px;
+}
+
+.cards {
+display: flex;
+gap: 200px;
+}
+
+.info-card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card{
+    border-right: 1px solid black;
+    padding-right: 50px;
+}
+
+.card img {
+    width: 320px;
+    height: 180px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card p{
+    font-size: 12px;
+}
+
+.card h3{
+    color: red;
+}
+
+.btn-mais-pratos {
+    display: flex;
+
+}
+.sobre {
+background-color: black;
+display: flex;
+align-items: center;
+gap: 40px;
+margin: 40px 30px;
+}
+
+.sobre h2 {
+color: white;
+}
+
+.direita-sobre {
+align-items: center;
+
+}
+
+.sobre p {
+    color: white;
+justify-content: center;
+}
