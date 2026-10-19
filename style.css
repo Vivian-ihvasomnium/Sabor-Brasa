@@ -93,7 +93,7 @@ header nav a:first-child, .footer-info nav a:first-child{
 .btn-reservar-primario {
     background-color: #D52222;
     color: white;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 10px;
     align-items: center;
     padding: 9px 30px;
@@ -121,7 +121,7 @@ header nav a:first-child, .footer-info nav a:first-child{
 .btn-ver-menu {
     background-color: #D52222;
     color: white;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 10px;
     align-items: center;
     padding: 12px 30px;
@@ -136,24 +136,25 @@ header nav a:first-child, .footer-info nav a:first-child{
     flex-direction: column;
     align-items: flex-start;
     color: white;
-    gap: 25px;      
+    gap: 25px;
+    padding-top: 20vh;
 }
 
 .menu {
     margin-top: 40px;
 }
-.superior-menu {
+.superior-menu,.superior-restaurantes {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.superior-menu h2 {
+.superior-menu h2,.superior-restaurantes h2 {
     font-weight: bolder;
 }
 
-.p-superior-menu {
+.p-superior-menu,.p-superior-restaurantes {
     color: rgb(0, 0, 0);
     border-radius: 10px;
 }
@@ -186,14 +187,9 @@ header nav a:first-child, .footer-info nav a:first-child{
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    font size: 16px;
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s; 
-}
-
-.ver-cardapio:hover{
-    background-color: white;
-    color: black;
 }
 
 .cards {
@@ -324,4 +320,30 @@ position: relative;
 
 .localizacao:hover{
     background-color: #a91b1b;
+}
+
+.btn-reservar-primario:hover{
+    background-color: #a91b1b;
+    border: 1px solid white;
+}
+
+.btn-ver-menu:hover{
+    background-color: #a91b1b;
+    border: 1px solid white;
+}
+
+.btn-reservar-secundario:hover{
+    background-color: #D52222;
+    border: 3px solid white;
+}
+
+.p-superior-menu:hover,.p-superior-restaurantes:hover{
+
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+}
+
+#insta:hover,#face:hover,#tiktok:hover,#spotify:hover{
+    color: #a91b1b;
 }
