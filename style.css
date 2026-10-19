@@ -24,9 +24,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-{
     display: flex;
     gap: 40px;
 }
@@ -111,6 +108,16 @@ header nav a:first-child, .footer-info nav a:first-child{
     padding: 9px 30px;
 }
 
+.btn-mais-pratos {
+    margin-left: 0;
+    flex-shrink: 0;
+    align-self: center;
+    height: 30px;
+    width: 30px;
+    align-self: center;
+    transform: translateY(-65px);
+}
+
 .btn-ver-menu {
     background-color: #D52222;
     color: white;
@@ -143,7 +150,7 @@ header nav a:first-child, .footer-info nav a:first-child{
 }
 
 .superior-menu h2 {
-font-weight: bolder;
+    font-weight: bolder;
 }
 
 .p-superior-menu {
@@ -175,23 +182,31 @@ font-weight: bolder;
     color: black;
     border: 1px solid;
     border-radius: 50px;
-    padding: 12px 20px;
+    padding: 12px 24px;  
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.ver-cardapio:hover{
+    background-color: white;
+    color: black;
 }
 
 .cards {
     display: flex;
     align-items: center;
-}
-
-.info-card{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex: 0 1 auto;
+    min-width: 0;
 }
 
 .card{
     border-right: 1px solid black;
     padding-right: 5px;
+    padding: 10px;
 }
 
 .card:last-child{
@@ -212,9 +227,14 @@ font-weight: bolder;
     color: red;
 }
 
-.btn-mais-pratos {
+
+.info-card{
     display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
+
+
 .sobre {
     background-color: black;
     display: flex;
@@ -267,11 +287,41 @@ font-weight: bolder;
     justify-content: space-between;
     align-items: center;
 }
+.p-inferior-restaurantes {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 .inferior-restaurantes img{
     width: 100%;
+    display: block;
 }
 
-.inferior-menu{
-    margin-top: 63px;
+.inferior-restaurantes {
+position: relative;
+}
+
+.localizacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    margin: 16px auto 0;
+    padding: 12px 20px;
+
+    background-color: #D52222;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.localizacao:hover{
+    background-color: #a91b1b;
 }
